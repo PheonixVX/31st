@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ThirtyFirst implements ModInitializer {
-    public static final String MOD_ID = "thirtyfirst";
+    public static final String MOD_ID = "thirtyFirst";
     public static final Logger logger = LogManager.getLogger();
 
     @Override
