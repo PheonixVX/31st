@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "id": "thirtyfirst",
+  "id": "thirtyFirst",
   "version": "${version}",
 
   "name": "31st",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "xxxInaksisxxx",
-    "realspectr3x"
+    "Inaksis",
+    "Spectr3x"
   ],
   "contact": {
     "homepage": "",
