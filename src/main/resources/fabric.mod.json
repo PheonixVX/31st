@@ -21,6 +21,9 @@
   "entrypoints": {
     "main": [
       "me.github.thirtyFirst.ThirtyFirst"
+    ],
+    "modmenu": [
+      "me.github.thirtyFirst.ModMenuIntegration"
     ]
   },
   "mixins": [

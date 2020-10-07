@@ -10,6 +10,10 @@ archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 
+repositories {
+	jcenter()
+}
+
 dependencies {
 	minecraft "com.mojang:minecraft:1.16.3"
 	mappings "net.fabricmc:yarn:1.16.3+build.28:v2"
@@ -17,6 +21,20 @@ dependencies {
 
 	//Fabric api
 	modImplementation "net.fabricmc.fabric-api:fabric-api:0.23.0+build.410-1.16"
+
+	//ModMenu
+	modImplementation "io.github.prospector:modmenu:1.14.6+build.31"
+
+	//Auto Config
+	modApi("me.sargunvohra.mcmods:autoconfig1u:3.2.2") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+	include "me.sargunvohra.mcmods:autoconfig1u:3.2.2"
+	//Cloth Config
+	modApi("me.shedaniel.cloth:config-2:4.8.2") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+	include "me.shedaniel.cloth:config-2:4.8.2"
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
