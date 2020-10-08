@@ -14,7 +14,5 @@ public class ThirtyFirst implements ModInitializer {
     @Override
     public void onInitialize() {
         logger.info("31st of Halloween loaded!!!");
-        AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new);
-        logger.info("Loaded Config!");
     }
 }
